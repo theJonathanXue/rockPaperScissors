@@ -1,6 +1,13 @@
-var el = document.getElementById('test');
-alert(el.innerText);
-
+function computerPlay() {
+  var randomNum = Math.random();
+  if (randomNum >= 0.68) {
+    return "Rock"
+  } else if (randomNum > 0.34) {
+    return "Paper"
+  } else {
+    return "Scizzors"
+  }
+}
 
 function playRound(playerSelection, computerSelection) {
   // your code here!
